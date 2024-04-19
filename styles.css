@@ -1,0 +1,123 @@
+:root {
+    --navbgcolor: rgb(232, 232, 232);
+    --navtxtcolor: rgb(140, 140, 140);
+    --bgcolor: rgb(127, 141, 156);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background: var(--bgcolor);
+    background-repeat: repeat;
+
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar_container {
+    height: 8vh;
+    width: 100%;
+
+    user-select: none;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    position: fixed;
+    z-index: 2;
+
+    top: 0;
+
+    background: var(--navbgcolor);
+
+    color: var(--navtxtcolor);
+
+    filter: drop-shadow(0 0 0.5vh rgba(0, 0, 0, 0.5));
+
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.logo {
+    height: 5vh;
+    width: 5vh;
+    cursor: pointer;
+}
+
+.logo:hover {
+    filter: brightness(95%);
+}
+
+.navbar_container span:hover {
+    cursor: pointer;
+}
+
+.navbar_options {
+    height: 100%;
+    display: flex;
+
+    list-style: none;
+}
+
+.navbar_options li {
+    height: 100%;
+    width: 6vw;
+
+    background: var(--navbgcolor);
+
+
+    font-size: 2.5vh;
+
+    box-sizing: border-box;
+}
+
+.navbar_options li:hover {
+    border-bottom: 0.5vh solid var(--navtxtcolor);
+}
+
+.navbar_options li a {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--navtxtcolor);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.main_body {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.row {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
